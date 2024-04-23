@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: MusicTweetAnalyzer
+server:
+  port: 8082
+
+logging.config:
+  classpath: log4j2.xml
+
+twitter:
+  api:
+    token: 1465350934259646465-fnggBPBqsTTslg62mFBqXhFMLpKjzh
+
+musixmatch:
+  api:
+    token: db6048a344f7a3ca41ae6aa195278f62
+
+spotify:
+  api:
+    client_id: 2e6627b598194830b1f502549ea6f9b9
+    client_secret: 4b97cd1cb10b4fc48ce884d6ef3bc827
+
+kafka:
+  server_endpoint: 127.0.0.1:9092
+  topic_name: songs-topic
+
+#    kafka.server_endpoint = 127.0.0.1:9092
+#    kafka.topic_name = my-topic
